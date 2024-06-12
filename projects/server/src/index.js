@@ -36,8 +36,10 @@ module.exports = { io };
 app.use(
   cors({
     origin: "https://jcwdol-0904-galaxystore.vercel.app",
+    credentials: true,
   })
 );
+
 app.use(express.json());
 app.use(express.static(join(__dirname, "public/images")));
 app.use(bodyParser.json());
