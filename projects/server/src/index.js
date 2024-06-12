@@ -33,7 +33,11 @@ module.exports = { io };
 
 // console.log(process.env.WHITELISTED_DOMAIN);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://jcwdol-0904-galaxystore.vercel.app",
+  })
+);
 app.use(express.json());
 app.use(express.static(join(__dirname, "public/images")));
 app.use(bodyParser.json());
