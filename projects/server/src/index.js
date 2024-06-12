@@ -167,3 +167,5 @@ server.listen(PORT, (err) => {
     console.log(`APP RUNNING at ${PORT} ✅`);
   }
 });
+
+module.exports = app;
