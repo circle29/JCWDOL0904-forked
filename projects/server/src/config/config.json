@@ -4,7 +4,8 @@
     "password": "group04",
     "database": "jcwdol0904",
     "host": "purwadhikabootcamp.com",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "dialectModule": "mysql2"
   },
   "test": {
     "username": "root",
